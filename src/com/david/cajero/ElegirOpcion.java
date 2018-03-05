@@ -99,7 +99,12 @@ public class ElegirOpcion extends javax.swing.JFrame {
             }
         });
 
-        Opciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Introducir dinero", "Sacar dinero", "Darse de baja", "Transferencia bancaria" }));
+        Opciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Introducir dinero", "Sacar dinero", "Darse de baja", "Transferencia bancaria", "Consultar saldo" }));
+        Opciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OpcionesActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -140,6 +145,10 @@ public class ElegirOpcion extends javax.swing.JFrame {
     private void cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarActionPerformed
         cancelar();
     }//GEN-LAST:event_cancelarActionPerformed
+
+    private void OpcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OpcionesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OpcionesActionPerformed
 
     public void botonesActionPerformed(java.awt.event.ActionEvent evt) {
 
