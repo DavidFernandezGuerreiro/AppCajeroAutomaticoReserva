@@ -25,7 +25,7 @@ public class ValorBilletes {
     
     //Excepcion que solo permita ingresar billetes de 5,10,20,50,100 y 500.
     public static boolean dineroIngresar(int cantIngresar) throws ExcepcionPropia{
-        boolean correcto=true;
+        boolean correcto=false;
         if(cantIngresar%5!=0){
             correcto=false;
             throw new ExcepcionPropia("** solo se puede ingresar billetes de 5, 10, 20, 50, 100 y 500 **");
